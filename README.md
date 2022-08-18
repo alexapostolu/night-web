@@ -1,2 +1,2 @@
 # night-web
-Website for Night
+Website for [Night](https://github.com/dynamicsquid/night)
