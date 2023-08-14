@@ -1,2 +1,2 @@
 # night-web
-Website for [Night](https://github.com/dynamicsquid/night)
+Website for the [Night](https://github.com/dynamicsquid/night) programming language
