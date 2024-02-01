@@ -1,5 +1,6 @@
 let time = 0;
 let stars = [];
+let width, height;
 
 class Star {
 	constructor() {
@@ -30,14 +31,18 @@ class Star {
 }
 
 function setup() {
+	width = windowWidth;
+	height = 500;
 	createCanvas(windowWidth - 17, 500);
 
 	for (let a = 0; a < 50; ++a)
 		stars.push(new Star());
+
+	requestAnimationFrame(draw);
 }
 
 function draw() {
-	// background
+	// Background.
 
 	clear();
 
@@ -54,7 +59,7 @@ function draw() {
 
 	time += 0.005;
 
-	// stars and cursor lines
+	// Stars and cursor lines.
 
 	for (let a = 0; a < stars.length; ++a) {
 		stars[a].display();
@@ -65,4 +70,7 @@ function draw() {
 			line(stars[a].x, stars[a].y, mouseX, mouseY);
 		}
 	}
+
+	requestAnimationFrame(draw);
+	DelayNode(0.02);
 }
