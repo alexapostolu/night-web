@@ -23,12 +23,11 @@
 
 			<hr>
 
-			<p id="tag"><b>Night</b> lets you see the <b>Stars</b></p>
+			<p id="tag">the <b>Night</b> lets you see the <b>Stars</b></p>
 
 			<div id="actions">
 				<div class="action"><a href="install.html"><h2>Install</h2></a></div>
 				<div class="action"><a href="learn.html"><h2>Learn</h2></a></div>
-				<div class="action"><h2>Extras</h2></div>
 			</div>
 		</div>
 
@@ -51,7 +50,7 @@
 
 			<p class="code">
 				<span class="com"># fib sequence using recursion</span><br>
-				<span class="key">fn</span> <span class="func">fib</span>(<span class="param">num</span>)<br>
+				<span class="key">def</span> <span class="func">fib</span>(<span class="param">num</span>)<br>
 				{<br>
 				&emsp;&emsp;<span class="key">if</span> (<span class="param">num</span> <= 1)<br>
 				&emsp;&emsp;&emsp;&emsp;<span class="key">return</span> <span class="param">num</span><br><br>
@@ -76,7 +75,7 @@
 				hidden runtime bugs and providing safer code.</p>
 
 			<p class="code">
-				<span class="key">fn</span> <span class="func">divide</span>(<span class="param">x</span>, <span class="param">y</span>)<br>
+				<span class="key">def</span> <span class="func">divide</span>(<span class="param">x</span>, <span class="param">y</span>)<br>
 				{<br>
 				&emsp;&emsp;<span class="key">return</span> <span class="param">x</span> / <span class="param">y</span><br>
 				}<br><br>
@@ -86,21 +85,6 @@
 				&emsp;&emsp;<span class="var">a</span> = <span class="func">divide</span>(10, 2) <span class="com"># error! 'a' is undefined</span><br>
 				&emsp;&emsp;<span class="key">let</span> <span class="var">b</span> = <span class="func">divide</span>(<span class="str">"s"</span>, 2) <span class="com"># error! 's' is an invalid argument type</span><br>
 				}
-			</p>
-
-			
-			<h2>Type System</h2>
-
-			<p class="desc">Even though Night's dynamically typed, it still features a unique and robust type
-				system that provides strong control to the user.</p>
-
-			<p class="code">
-				<span class="key">fn</span> <span class="func">add</span>(<span class="param">x</span>: <span class="key">int32</span>, <span class="param">y</span>: <span class="key">int32</span>) -> <span class="key">int32</span><br>
-				{<br>
-				&emsp;&emsp;<span class="key">return</span> <span class="param">x</span> / <span class="param">y</span><br>
-				}<br><br>
-
-				<span class="key">let</span> <span class="var">b</span> = <span class="func">divide</span>(<span class="str">"s"</span>, 2) <span class="com"># error! 's' is an invalid argument type</span><br>
 			</p>
 		</div>
 	</body>

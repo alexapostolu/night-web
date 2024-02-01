@@ -41,9 +41,9 @@ canvas {
 
 #header #tag {
     background-color: #eee;
-	color: gray;
+	color: rgb(95, 95, 95);
 	
-    width: 27%;
+    width: 24%;
 
 	margin: auto;
 	margin-top: 68px;
